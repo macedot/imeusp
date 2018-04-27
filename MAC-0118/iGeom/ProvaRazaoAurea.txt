@@ -1,0 +1,42 @@
+---------------------------------------------------------
+iGeom - iGeom - Geometria Interativa na Internet - 3.2.29
+http://www.matematica.br/igeom
+Construção na forma de "algoritmo"
+---------------------------------------------------------
+B:= Ponto ( 54.0,-387.0 )
+A:= Ponto ( 157.0,-387.0 )
+:= SemiReta ( B,A )
+c0:= Circunferencia ( A,B )
+r:= Perpendicular ( ,A )
+C:= PontoMedio ( B,A )
+D:= PontoInterseção ( c0,r )
+c1:= Circunferencia ( C,D )
+E:= PontoInterseção ( ,c1 )
+c2:= Circunferencia ( B,E )
+E:= PontoInterseção ( c0,c2 )
+s:= Reta ( E,? )
+:= Segmento ( A,E )
+c3:= Circunferencia ( B,A )
+C:= PontoInterseção ( s,c3 )
+:= Segmento ( B,C )
+c4:= Circunferencia ( C,B )
+c5:= Circunferencia ( E,A )
+D:= PontoInterseção ( c5,c4 )
+I:= PontoInterseção ( c5,c4 )
+:= Segmento ( C,D )
+:= Segmento ( D,E )
+:= SemiReta ( D,E )
+F:= PontoInterseção ( , )
+d:= Segmento ( A,D )
+Texto 6 := t 
+Texto 6 := t 
+Texto 6 := d 
+Texto 6 := d
+Distância_0 := ângulo(D,E,A) = 108.000°
+Distância_1 := ângulo(E,A,D) = 35.999°
+Distância_2 := ângulo(A,D,E) = 35.999°
+Distância_3 := ângulo(A,E,F) = 71.999°
+Distância_4 := ângulo(E,F,A) = 36.000°
+Distância_5 := ângulo(F,A,E) = 72.000°
+Texto 6 := Triângulo DEA 
+Texto 6 := Triângulo AEF 

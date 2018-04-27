@@ -1,0 +1,1 @@
+del points_*.txt

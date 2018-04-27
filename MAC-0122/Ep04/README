@@ -1,0 +1,20 @@
+/***********************************************************
+Thiago Pinheiro de Macedo
+Nº USP 5124272
+MAC-0122 Principios de Desenvolvimento de Algoritmos
+4º Exercicio-Programa
+************************************************************
+Comentários:
+- Dias pesquisando, testando, medindo, e testando e medindo;
+Esse seria um resumo para este EP. Novamente, uma tafera 
+simples que possiua complicadores externos que nao podiam
+ser simplesmente contornados. Sem duvida o maior problema
+foi adaptar um modo para medirmos o desempenho dos 
+algoritmos, concluindo apenas ao redigir a conclusao do
+relatorio pedido que de fato nao haviam problemas com 
+as medicoes, e nem com a geracao de numeros aleatorios, 
+e sim que de fato os algoritmos (obviamente) nao sao 
+totalmente previsiveis, e poderiamos incrementar os testes
+com diversas outras opcoes, mas nao num EP com entrega
+para dezembro.
+***********************************************************/

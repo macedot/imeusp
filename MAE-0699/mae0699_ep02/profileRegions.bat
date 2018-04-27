@@ -1,0 +1,9 @@
+mae0699_ep02.exe -P100000 -R1 > profileRegions.txt
+mae0699_ep02.exe -P100000 -R2 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R3 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R4 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R5 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R6 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R7 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R8 >> profileRegions.txt
+mae0699_ep02.exe -P100000 -R9 >> profileRegions.txt

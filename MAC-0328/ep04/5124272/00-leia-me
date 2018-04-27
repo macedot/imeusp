@@ -1,0 +1,8 @@
+================================================================================
+Tarefa #04 - Limitacoes
+================================================================================
+- Maximo de vertices: 50.000;
+- Nao verifica ordem ideal para comandos das dependencias;
+- Nao verifica data/hora de execucao dos targets;
+- Targets e dependencias numa mesma lista. Seria idea separa-los;
+

@@ -1,0 +1,36 @@
+======================================================================
+Calculo da Integral via Monte Carlo com Variavel de Controle
+======================================================================
+
+Parametros Operacionais:
+	Pontos para estimar Theta .....: 1000
+	Pontos para estimar a Integral : 100000
+	Simulacoes de Theta ...........: 100
+	Simulacoes da Integral ........: 100
+
+Estimando valor de Theta... [ 0.9989890895744411 ]
+
+Valor da Integral na Esfera... [ -1.3962633930961210 ]
+
+Estimando valor da Integral no Elipsoide... [ -1.3958332721226123 ]
+
+>>> Diferenca para a integral na Esfera: 0.0004301209735087
+
+======================================================================
+Calculo da Integral via Monte Carlo com Variavel de Controle
+======================================================================
+
+Parametros Operacionais:
+	Pontos para estimar Theta .....: 1000
+	Pontos para estimar a Integral : 100000
+	Simulacoes de Theta ...........: 100
+	Simulacoes da Integral ........: 100
+
+Estimando valor de Theta... [ 0.9990098568110072 ]
+
+Estimando valor da Integral na Esfera... [ -1.3963544989379666 ]
+
+Estimando valor da Integral no Elipsoide... [ -1.3964125251176536 ]
+
+>>> Diferenca para a integral na Esfera: -0.0000580261796870
+

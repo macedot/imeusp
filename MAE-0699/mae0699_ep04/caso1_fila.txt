@@ -1,0 +1,32 @@
+> # Duracao do Atendimento da Fila
+> summary(t)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  647.0   717.0   739.0   740.3   763.0   844.0 
+> 
+
+
+> # Tamanho da Fila
+> summary(f)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00   46.00   94.00   95.91  143.00  271.00 
+>
+
+> quantile(f, 0.12);
+12% 
+ 20 
+> 
+
+> quantile(f, 0.17);
+17% 
+ 30 
+> 
+
+> quantile(f, 0.27);
+27% 
+ 50 
+> 
+
+> quantile(f, 0.53);
+53% 
+100 
+> 

@@ -1,0 +1,21 @@
+"Algoritmo: um conjunto de instruções, finito e ordenado, 
+onde cada instrução pode ser executada apenas com lápis e papel. 
+O algoritmo, quando executado tem que terminar e dar um resultado e 
+esse resultado tem que ser o mesmo se, em uma nova execução, 
+for dada a mesma entrada."
+
+Tomando a "Receita de Bolo" apresentada, temos que a mesma apresenta 
+características de ser um algorítmo. No entanto, a singularidade do
+resultado final não fica garantida, pois existem fatores externos,
+que não são contemplados pela receita, como a temperatura do forno
+para que seja assado o bolo, o modo como o operador executa a tarefa.
+Também não podemos garantir que um operador diferente execute a tarefa
+do mesmo modo que o primeiro a executou. Nem mesmo o primeiro operador pode 
+execula-ta de modo idêntico. Temos também a questão dos materiais envolvidos, 
+o rendimento, a forma para assar o bolo, entro outros.
+
+Vemos que o exemplo utilizado serve para uma a definição básico de algorítmo,
+e sua característica didática é váida, mas teríamos problemas se formos nos 
+aprofundar na situação real. Se utilizassemos o outro exemplo sugerido, 
+"Trocar a Lâmpada" por exemplo, assim como a maioria dos exemplos "simples"
+para uma questão didática, teríamos as mesmas limitações.

@@ -1,0 +1,122 @@
+Exibir seu histórico de conversa inteiro com este contato
+  
+tHIAGO disse:
+vo dormi =) flw paoo!! boa sorte!
+  Paô   --> Acho que me perdi numa excursão disse:
+falow! valeu, se eu conseguir algo te mando por e-mail
+tHIAGO disse:
+=*
+  
+tHIAGO diz:
+simplex?!
+tHIAGO diz:
+antivirus: http://www.eset.com.br/
+  Paô diz:
+naum rolou com simplex
+tHIAGO diz:
+se voce for instalar,,, instala, mas NAO REINICIA A MAQUINA!! vo te passa um barato pra "extender" o limite de trial
+  Paô diz:
+naum é linear
+  Paô diz:
+ahahahah
+tHIAGO diz:
+claro que nao hehe =)
+  Paô diz:
+bom, estou tentando
+  Paô diz:
+caso naum consiga vou testar pra uns 100 valores diferentes e pegar o menor
+tHIAGO diz:
+isso pra fazer o que;!
+tHIAGO diz:
+??
+  Paô diz:
+pra saber quantos pontos eu pego em cada região pra fazer a estratificada
+tHIAGO diz:
+vc conseguiu gerar os pontos??
+  Paô diz:
+então, o q ele disse é assim
+  Paô diz:
+gera uma quantidade x de pontos
+  Paô diz:
+conta quantos cairam em cada região
+  Paô diz:
+faz a proporção e encontra a probabilidade pi de cada região
+  Paô diz:
+aí acha a variância de cada região
+tHIAGO diz:
+to anotando
+  Paô diz:
+(com os pontos gerados pra contar q vc armazena)
+  Paô diz:
+aí tem uma função tal que somatoria((pi^2*si^2)/ni)
+  Paô diz:
+vc tem que achar o mínimo dessa função
+  Paô diz:
+sabendo que a somatória dos ni é o número de pontos total que vc vai querer gerar, por exemplo, 10000
+  Paô diz:
+achando o mínimo, os ni que vc achou são o número de pontos que vc tem que gerar em cada região
+  Paô diz:
+aí gera e pãs
+tHIAGO diz:
+gera onde?
+  Paô diz:
+vc gera o número de pontos em cada região
+  Paô diz:
+eu como naum sei fazer isso gero no geral e faço até que cada minha região tenha o número q eu queria.. vou testando
+tHIAGO diz:
+essa ultima nao eh a formula que a vivi mando no email?
+e pra gerar na regiao 1/||x||^2 vc faz como?
+  Paô diz:
+é a fórmula q a vivi mandou no e-mail
+tHIAGO diz:
+e aquela formula nao permitia gerar em cada regiao separadamente?
+  Paô diz:
+sim
+  Paô diz:
+mas eu naum gostei dela
+  Paô diz:
+ahahah
+tHIAGO diz:
+mas vc usa pra gerar dentro da integral?
+  Paô diz:
+como assim?
+tHIAGO diz:
+(1) voce tem que gerar pontos na regiao (R, aquela que testa cada uma das regioes) e depois, ver dentro de onde ela cai (4 bolas)
+tHIAGO diz:
+?
+  Paô diz:
+isso
+  Paô diz:
+ou com a fórmula da vivi vc já consegue gerar diretamente dentro das 4 bolas
+tHIAGO diz:
+entao,, eu vo fazer assim: durante o calculo da primeira parte, eu jah conto quantos pontos caem dentro de cada bola,,, ai eu aplico aquela formula doida que vc passou e calculo os pontos dentro de cada regiao, testo as regioes. ok?
+  Paô diz:
+ok.. mas como vc vai fazer aquela fórmula doida?
+  Paô diz:
+achar aquele mínimo?
+  Paô diz:
+é isso q tá pegando
+tHIAGO diz:
+ahh mas pera neh!! eu nao tinah chegado nessa parte =P
+  Paô diz:
+pq achando ele vc cosegue achar os ni de cada região, gera ni pontos nelas, acha as médias, multiplica pelas probabilidades e soma
+tHIAGO diz:
+calmaaaa
+tHIAGO diz:
+que raios eh esse "si"?
+  Paô diz:
+variância de cada região
+  Paô diz:
+i/n-1 * (somatoria (xi-xbarra)^2)
+  Paô diz:
+na verdade é 1/n-1
+tHIAGO diz:
+X nesse caso sao as normas, certo?
+  Paô diz:
+isso
+  Paô diz:
+e xbarra é a média da norma da região
+tHIAGO diz:
+ok,, to quase entendendo
+  Paô diz:
+=)

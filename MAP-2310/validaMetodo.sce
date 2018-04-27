@@ -1,0 +1,104 @@
+////////////////////////////////////////////////////////////////////////////////
+// Thiago Pinheiro de Macedo - NUSP 5124272
+////////////////////////////////////////////////////////////////////////////////
+
+// Renova o ambiente =o)
+clear
+
+////////////////////////////////////////////////////////////////////////////////
+// VALIDA METODO NUMERICO (original por Eduardo Oda)
+// metodo  : funcao -> [x,y] = metodo(x0,xm,m,y0,f)
+// testes  : int >= 1
+// x0      : inicio do intervalo de validacao
+// xm      : final do intervalo de validacao
+// y0      : conticao inical
+// y_exato : funcao solucao exata -> v = y_exato(x)
+// f       : funcao do problema de cauchy -> v = f(x, y)
+////////////////////////////////////////////////////////////////////////////////
+function [x, y] = valida(metodo, testes, x0, xm, y0, y_exato, f)
+  log_2 = log(2);
+  m     = 10;
+
+  y_xm  = y_exato(xm);
+  [x,y] = metodo(x0, xm, m, y0, f);
+  yk    = y(m + 1, 1);
+
+  h     = ((x_m - x_0) / m);
+  e_k   = abs(yk - y_xm);
+
+  printf("     m     |       h      |     e_h(E)   |      2^q     |       q      \n");
+  printf("-----------+--------------+--------------+--------------+--------------\n");
+  printf(" %9d | %1.10f | %1.10f |      --      |      --      \n", m, h, e_k);
+
+  for k = 1:max(testes, 1)
+    h  = 0.5 * h;
+    m  = 10.0 * 2^k
+
+    [x, y] = metodo(x0, xm, m, y0, f);
+
+    e_k   = abs(y(m + 1, 1) - y_xm);
+    ratio = abs(yk - y_xm) / e_k;
+    q_k   = log(ratio) / log_2;
+
+    printf(" %9d | %1.10f | %1.10f | %1.10f | %1.10f\n", m, h, e_k, ratio, q_k);
+
+    yk = y(m + 1, 1);
+  end
+endfunction
+////////////////////////////////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////////////////////////////////
+function waitUser()
+  printf("\n-> Digite `resume` para continuar ou `abort` para finalizar:");
+  pause;
+endfunction
+////////////////////////////////////////////////////////////////////////////////
+// Metodo de Euler
+////////////////////////////////////////////////////////////////////////////////
+function [t,y] = metodoEuler(t0, tm, m, y0, f)
+  h = (tm - t0) / m;
+  t = t0;
+  y = y0;
+  for k = 1:m
+    k1 = h * f(t(k), y(k,:));
+    y  = [y; y(k,:) + k1];
+    t  = [t; t(k)   + h];
+  end
+endfunction
+////////////////////////////////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////////////////////////////////
+function v = funcao_f(x, y)
+  v = -2*x*y;
+endfunction
+////////////////////////////////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////////////////////////////////
+function v = funcao_y(x)
+  v = []
+  i = 1;
+  for s = x
+    v(i) = exp(-s^2);
+    i = i + 1;
+  end
+endfunction
+////////////////////////////////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////////////////////////////////
+// Verificacao numerica do erro global de discretizacao;
+printf("\n\n");
+k_max = 3;
+x_0 = 0;
+x_m = 2.5;
+y_0 = 1;
+[x, y_numerico] = valida(metodoEuler, k_max, x_0, x_m, y_0, funcao_y, funcao_f);
+y_exato = funcao_y(x');
+printf("\n\n");
+/////////////////////////////////////////////////////////////////////////////
+clf();
+plot2d(x, y_numerico, style=-1);
+plot2d(x, y_exato   , style= 3);
+
+////////////////////////////////////////////////////////////////////////////////
+// [EoF]
+////////////////////////////////////////////////////////////////////////////////

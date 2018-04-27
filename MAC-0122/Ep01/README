@@ -1,0 +1,13 @@
+/***********************************************************
+** Thiago Pinheiro de Macedo
+** Nº USP 5124272
+** MAC-0122 Principios de Desenvolvimento de Algoritmos
+** 1º Exercicio-Programa
+************************************************************
+** Comentários:
+** - No geral, a tarefa solicitada nao demandou muito tempo
+** de desenvolvimento, apenas foi necessario repensar sobre
+** como fazer a multiplicacao de matrizes. Fatores como a
+** explicita indicacao para o uso de matrizes estaticas
+** facilitaram e pouparam algumas linhas de codigo.
+***********************************************************/

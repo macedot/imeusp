@@ -1,0 +1,150 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      4237,        140]
+NotebookOptionsPosition[      3733,        118]
+NotebookOutlinePosition[      4073,        133]
+CellTagsIndexPosition[      4030,        130]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"NIntegrate", "[", 
+   RowBox[{
+    RowBox[{"Log", "[", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"x", "^", "2"}], " ", "+", " ", 
+       RowBox[{"y", "^", "2"}], " ", "+", " ", 
+       RowBox[{"z", "^", "2"}]}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", " ", "0", ",", " ", "1"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", " ", "0", ",", " ", "1"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", " ", "0", ",", " ", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.391424295171875*^9, 3.391424360375*^9}, 
+   3.391424435546875*^9, {3.391424495375*^9, 3.391424564875*^9}, {
+   3.391424623375*^9, 3.3914246439375*^9}, {3.39142471171875*^9, 
+   3.391424744484375*^9}, {3.391424807734375*^9, 3.391424811125*^9}, {
+   3.391424845*^9, 3.391424854515625*^9}, {3.391424897453125*^9, 
+   3.391424978546875*^9}, {3.39142530003125*^9, 3.3914253028125*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "0.09385225619339864`"}]], "Output",
+ CellChangeTimes->{3.391425304203125*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "1"}], " ", "+", " ", 
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"x", "^", "2"}], " ", "+", " ", 
+       RowBox[{"y", "^", "2"}]}], "]"}], "*", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"x", "^", "2"}], " ", "+", " ", 
+         RowBox[{"y", "^", "2"}]}], "]"}]}], "]"}]}], " ", "+", " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "/", "2"}], ")"}], "*", 
+     RowBox[{"Log", "[", 
+      RowBox[{"1", " ", "+", " ", 
+       RowBox[{"x", "^", "2"}], " ", "+", " ", 
+       RowBox[{"y", "^", "2"}]}], "]"}]}]}], ",", " ", "\n", "  ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", "0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", " ", "0", ",", " ", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.391424957140625*^9, 3.391425104328125*^9},
+ FormatType->"InputForm"],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "1"}], " ", "+", " ", 
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
+      RowBox[{
+       RowBox[{"x", "^", "2"}], " ", "+", " ", 
+       RowBox[{"y", "^", "2"}]}], "]"}], "*", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{"1", "/", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"x", "^", "2"}], " ", "+", " ", 
+         RowBox[{"y", "^", "2"}]}], "]"}]}], "]"}]}], " ", "+", " ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "/", "2"}], ")"}], "*", 
+     RowBox[{"Log", "[", 
+      RowBox[{"1", " ", "+", " ", 
+       RowBox[{"x", "^", "2"}], " ", "+", " ", 
+       RowBox[{"y", "^", "2"}]}], "]"}]}]}], ",", " ", "\n", "  ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", "0", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", " ", "0", ",", " ", "1"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.391425208125*^9},
+ FormatType->"InputForm"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[""], "Input"]
+},
+WindowSize->{765, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"6.0 for Microsoft Windows (32-bit) (April 28, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[590, 23, 958, 21, 31, "Input"],
+Cell[1551, 46, 106, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1694, 53, 993, 28, 49, "Input"],
+Cell[2690, 83, 969, 28, 47, "Output"]
+}, Open  ]],
+Cell[3674, 114, 26, 0, 31, "Input"],
+Cell[3703, 116, 26, 0, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
